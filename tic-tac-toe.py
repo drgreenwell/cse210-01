@@ -3,7 +3,6 @@ Name: Daniel Greenwell
 Class: CSE 210
 Assignment: W02 Prove: Developer - Solo Code Submission
 '''
-
 def create_board():
     board = []
     for square in range(9):
@@ -59,9 +58,9 @@ def make_move(player, board):
 
 def next_player(current):
     if current == "" or current == "o":
-        return "x"
+        return ("x")
     elif current == "x":
-        return "o"
+        return ("o")
 
 def main():
     player = next_player("")
