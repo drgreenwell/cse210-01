@@ -35,7 +35,7 @@ def has_winner(board):
             board[0] == board[4] == board[8] or
             board[2] == board[4] == board[6])
 
-def congraduations(board):
+def winner_message(board):
     if board[0] == board[1] == board[2]:
         return (print(f"{board[0]} wins!"))
     elif board[3] == board[4] == board[5]:
@@ -71,7 +71,7 @@ def main():
         make_move(player, board)
         player = next_player(player)
     display_board(board)
-    congraduations(board)
+    winner_message(board)
     print("Good game. Thanks for playing!")
     
 if __name__ == "__main__":
